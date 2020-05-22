@@ -9,7 +9,10 @@ router.post("/", function (req, res, next) {
     return;
   }
 
-  res.json(req.body);
+  res.json({
+    firstName: "Joe",
+    lastName: "Black",
+  });
 });
 
 module.exports = router;
